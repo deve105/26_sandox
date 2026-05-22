@@ -1,0 +1,38 @@
+HPC File Structure
+
+home ~/
+scratch/
+project/, work/
+archive/
+
+Paralleilized and staged pipeline (Multiple, Parallel Jobs)
+
+## Intro to Research Data Management and GDPR
+
+Organized, shareable, and reproducible. (FAIR data: Findable, Accessible, Interoperable, Reusable)
+
+Reproducibility - Reliability - Findability
+
+Data life cycle: Create -> Store -> Use -> Share -> Archive -> Destroy
+
+Sensitive personal data will not be collected.
+
+## Concepts
+
+Pseudonymized vs anonymized (Irreversible)
+Synthetic data
+
+Share responsibility model
+
+Right to erasure
+
+Data processing agreements
+
+
+UCloud
+Genome-DK
+LUMI
+
+DeiC free HPC sources
+Center for Basic Metabolic - Novo Nordisk
+
