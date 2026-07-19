@@ -1,0 +1,20 @@
+[workspace]
+name = "26-sandox"
+version = "0.1.0"
+description = "Pixi environment for STAR RNA-seq alignment workflows."
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64", "osx-arm64"]
+
+[dependencies]
+star = "*"
+samtools = "*"
+fastqc = "*"
+multiqc = "*"
+pigz = "*"
+
+[tasks]
+star-version = "STAR --version"
+samtools-version = "samtools --version | head -n 1"
+qc = "fastqc --help >/dev/null && multiqc --version"
+star-index = "bash scripts/star_index.sh"
+star-align-pe = "bash scripts/star_align_paired.sh"

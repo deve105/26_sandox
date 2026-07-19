@@ -36,3 +36,28 @@ LUMI
 DeiC free HPC sources
 Center for Basic Metabolic - Novo Nordisk
 
+```{bash}
+## Local Host Keys
+cd ~/.ssh 
+cat ~/.ssh/known_hosts
+## Create a Key PD2026.
+ssh-keygen -t ed25519 -f ~/.ssh/id_TBB
+## Add the Key to the agent
+ssh-add ~/.ssh/id_TBB
+## Copy the Key to the server
+cat ~/.ssh/id_TBB.pub | pbcopy
+
+## Creating folder for keys in the server
+echo "paste_your_public_key_here" >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
+```{bash}
+## Connecting with Github
+DEV_TBB_Lab
+Settings > Developer settings (at the bottom) > Personal access tokens > Tokens (classic) > Generate new token (classic)
+
+Note: git commit DEV_TBB_Lab
+Select scope: ✅ repo (top option)
+Do not set a expiration date
+```
